@@ -8,7 +8,8 @@
 import UIKit
 
 class HomeTableViewCell: UITableViewCell {
-    var count: Int = 1
+    var count: Bool = true
+    
     
     @IBOutlet weak var idImage: UIImageView!
     @IBOutlet weak var titleImage: UIImageView!
@@ -34,13 +35,15 @@ class HomeTableViewCell: UITableViewCell {
     
     
     @objc func like(sender:UIButton) {
-        //        switch likeButton {
-        //        case likeButton.backgroundColor = .red
-        //        print("좋아요")
-        //
-        //    } else {
-        //        likeButton.backgroundColor = .black
-        //        print("취소")
-        //    }
+
+            if count == true {
+                likeButton.setTitleShadowColor(.red, for: .normal)
+                likeButton.backgroundColor = UIColor.red
+                print("good")
+            } else {
+                likeButton.backgroundColor = .black
+                print("취소")
+            }
     }
+   
 }
