@@ -34,8 +34,16 @@ class HomeTableViewCell: UITableViewCell {
         
     }
     @objc func add(sender: UIButton) {
-        
         let storyboacrd = UIStoryboard.init(name: "PopUpView", bundle: nil)
+        let popUpVC = storyboacrd.instantiateViewController(withIdentifier: "PopUpView") as! PopUpView
+        popUpVC.modalPresentationStyle = .overCurrentContext
+        popUpVC.modalTransitionStyle = .crossDissolve
+        popUpVC.present(popUpVC, animated: true)
+        
+//        let storyboacrd = PopUpView(nibName: "PopUpView", bundle: nil)
+//        storyboacrd.modalPresentationStyle = .overCurrentContext
+//        storyboacrd.modalTransitionStyle = .crossDissolve
+//        storyboacrd.present(storyboacrd, animated: false)
         print("add")
 //        let customPopUpVc = storyboacrd.instantiateViewController(withIdentifier: "PopUpview") as! PopUpViewController
 //        customPopUpVc.modalPresentationStyle = .overCurrentContext

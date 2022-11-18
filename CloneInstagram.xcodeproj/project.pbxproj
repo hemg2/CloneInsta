@@ -7,13 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63021E7B292732E300B8AB26 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021E7A292732E300B8AB26 /* PopUpViewController.swift */; };
 		63021E7E29273FA700B8AB26 /* PopUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021E7D29273FA700B8AB26 /* PopUpView.storyboard */; };
+		63021E84292756DC00B8AB26 /* PopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021E83292756DC00B8AB26 /* PopUpView.swift */; };
 		633A1D33292612560009FBB2 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633A1D32292612560009FBB2 /* HomeTableViewCell.swift */; };
 		633A1D352926137F0009FBB2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633A1D342926137F0009FBB2 /* HomeViewController.swift */; };
 		633F3F0C2925FD3F00A5237B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F3F0B2925FD3F00A5237B /* AppDelegate.swift */; };
 		633F3F0E2925FD3F00A5237B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F3F0D2925FD3F00A5237B /* SceneDelegate.swift */; };
-		633F3F102925FD3F00A5237B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F3F0F2925FD3F00A5237B /* ViewController.swift */; };
 		633F3F132925FD3F00A5237B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633F3F112925FD3F00A5237B /* Main.storyboard */; };
 		633F3F152925FD4000A5237B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633F3F142925FD4000A5237B /* Assets.xcassets */; };
 		633F3F182925FD4000A5237B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633F3F162925FD4000A5237B /* LaunchScreen.storyboard */; };
@@ -25,14 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		63021E7A292732E300B8AB26 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		63021E7D29273FA700B8AB26 /* PopUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUpView.storyboard; sourceTree = "<group>"; };
+		63021E83292756DC00B8AB26 /* PopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpView.swift; sourceTree = "<group>"; };
 		633A1D32292612560009FBB2 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		633A1D342926137F0009FBB2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		633F3F082925FD3F00A5237B /* CloneInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		633F3F0B2925FD3F00A5237B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		633F3F0D2925FD3F00A5237B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		633F3F0F2925FD3F00A5237B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		633F3F122925FD3F00A5237B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		633F3F142925FD4000A5237B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		633F3F172925FD4000A5237B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				63021E7D29273FA700B8AB26 /* PopUpView.storyboard */,
+				63021E83292756DC00B8AB26 /* PopUpView.swift */,
 			);
 			path = AddPopUpView;
 			sourceTree = "<group>";
@@ -68,7 +67,6 @@
 			children = (
 				633A1D32292612560009FBB2 /* HomeTableViewCell.swift */,
 				633A1D342926137F0009FBB2 /* HomeViewController.swift */,
-				63021E7A292732E300B8AB26 /* PopUpViewController.swift */,
 			);
 			path = VIewController;
 			sourceTree = "<group>";
@@ -97,7 +95,6 @@
 				633F3F272926076F00A5237B /* My */,
 				633F3F0B2925FD3F00A5237B /* AppDelegate.swift */,
 				633F3F0D2925FD3F00A5237B /* SceneDelegate.swift */,
-				633F3F0F2925FD3F00A5237B /* ViewController.swift */,
 				633F3F112925FD3F00A5237B /* Main.storyboard */,
 				633F3F142925FD4000A5237B /* Assets.xcassets */,
 				633F3F162925FD4000A5237B /* LaunchScreen.storyboard */,
@@ -210,13 +207,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				633F3F2B2926079500A5237B /* ReelesViewController.swift in Sources */,
-				633F3F102925FD3F00A5237B /* ViewController.swift in Sources */,
 				633A1D33292612560009FBB2 /* HomeTableViewCell.swift in Sources */,
 				633F3F0C2925FD3F00A5237B /* AppDelegate.swift in Sources */,
 				633F3F0E2925FD3F00A5237B /* SceneDelegate.swift in Sources */,
 				633A1D352926137F0009FBB2 /* HomeViewController.swift in Sources */,
 				633F3F2F292607A900A5237B /* MyViewController.swift in Sources */,
-				63021E7B292732E300B8AB26 /* PopUpViewController.swift in Sources */,
+				63021E84292756DC00B8AB26 /* PopUpView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
