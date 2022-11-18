@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PopUpView" id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1kA-cn-U1I">
+                                <rect key="frame" x="0.0" y="497" width="390" height="347"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FXR-nY-Zcb">
+                                        <rect key="frame" x="316.33333333333331" y="16" width="53.666666666666686" height="68.666666666666671"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMh-sy-1Tu">
+                                                <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="bookmark" catalog="system" title=""/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZxN-0C-dZy">
+                                                <rect key="frame" x="0.0" y="34.333333333333371" width="53.666666666666664" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="저장"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="8C7-kK-ziz">
+                                        <rect key="frame" x="157" y="15" width="53.666666666666664" height="70.666666666666671"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XN5-C3-ela">
+                                                <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHG-Gv-TbQ">
+                                                <rect key="frame" x="0.0" y="36.333333333333371" width="53.666666666666664" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="링크"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="KKt-pl-ajr">
+                                        <rect key="frame" x="24.999999999999996" y="15" width="53.666666666666657" height="70.666666666666671"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lr6-90-X2B">
+                                                <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="shazam.logo.fill" catalog="system"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0L5-12-bzP">
+                                                <rect key="frame" x="0.0" y="36.333333333333371" width="53.666666666666664" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="공유"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="DOX-XS-QwO">
+                                        <rect key="frame" x="10" y="90.666666666666643" width="230" height="226.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uok-oD-i7Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.66666666666666" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="star" catalog="system" title=" 즐겨찾기에 추가"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPA-vq-gZd">
+                                                <rect key="frame" x="0.0" y="47.333333333333371" width="138.33333333333334" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="person.fill" catalog="system" title="   팔로우 취소"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GaT-LP-BHc">
+                                                <rect key="frame" x="0.0" y="94.666666666666742" width="144" height="54.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="questionmark.app.fill" catalog="system" title="   이 게시물이 표시되는 이유"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ko1-x2-S2n">
+                                                <rect key="frame" x="0.0" y="162" width="92.333333333333329" height="34.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="eraser" catalog="system" title="숨기기"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TM6-Ss-HEw">
+                                                <rect key="frame" x="0.0" y="209.33333333333337" width="91.333333333333329" height="17"/>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="exclamationmark.bubble" catalog="system" title="  신고"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="KKt-pl-ajr" firstAttribute="top" secondItem="1kA-cn-U1I" secondAttribute="top" constant="15" id="1ok-MO-BR6"/>
+                                    <constraint firstAttribute="trailing" secondItem="DOX-XS-QwO" secondAttribute="trailing" constant="150" id="45n-Y7-u7N"/>
+                                    <constraint firstItem="DOX-XS-QwO" firstAttribute="top" secondItem="8C7-kK-ziz" secondAttribute="bottom" constant="5" id="5L7-ok-eDf"/>
+                                    <constraint firstAttribute="trailing" secondItem="FXR-nY-Zcb" secondAttribute="trailing" constant="20" id="APH-a2-2Gx"/>
+                                    <constraint firstItem="8C7-kK-ziz" firstAttribute="centerY" secondItem="KKt-pl-ajr" secondAttribute="centerY" id="Rl4-1b-lnc"/>
+                                    <constraint firstItem="FXR-nY-Zcb" firstAttribute="centerY" secondItem="KKt-pl-ajr" secondAttribute="centerY" id="Tc0-CG-Kbi"/>
+                                    <constraint firstItem="KKt-pl-ajr" firstAttribute="leading" secondItem="1kA-cn-U1I" secondAttribute="leading" constant="25" id="Wfj-Re-rw2"/>
+                                    <constraint firstAttribute="bottom" secondItem="DOX-XS-QwO" secondAttribute="bottom" constant="30" id="baD-bX-ObA"/>
+                                    <constraint firstItem="DOX-XS-QwO" firstAttribute="leading" secondItem="1kA-cn-U1I" secondAttribute="leading" constant="10" id="ixn-Ux-wSH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1kA-cn-U1I" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="450" id="ER1-lj-rBh"/>
+                            <constraint firstItem="1kA-cn-U1I" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="XMn-Aw-PuC"/>
+                            <constraint firstItem="1kA-cn-U1I" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="if8-zz-5aM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1kA-cn-U1I" secondAttribute="trailing" id="lFy-MH-sUq"/>
+                            <constraint firstAttribute="bottom" secondItem="1kA-cn-U1I" secondAttribute="bottom" id="zIk-51-kta"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="67.692307692307693" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="eraser" catalog="system" width="128" height="119"/>
+        <image name="exclamationmark.bubble" catalog="system" width="128" height="110"/>
+        <image name="link" catalog="system" width="128" height="124"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="questionmark.app.fill" catalog="system" width="128" height="114"/>
+        <image name="shazam.logo.fill" catalog="system" width="128" height="123"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

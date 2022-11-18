@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63021E7B292732E300B8AB26 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63021E7A292732E300B8AB26 /* PopUpViewController.swift */; };
+		63021E7E29273FA700B8AB26 /* PopUpView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63021E7D29273FA700B8AB26 /* PopUpView.storyboard */; };
 		633A1D33292612560009FBB2 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633A1D32292612560009FBB2 /* HomeTableViewCell.swift */; };
 		633A1D352926137F0009FBB2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633A1D342926137F0009FBB2 /* HomeViewController.swift */; };
 		633F3F0C2925FD3F00A5237B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F3F0B2925FD3F00A5237B /* AppDelegate.swift */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63021E7A292732E300B8AB26 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		63021E7D29273FA700B8AB26 /* PopUpView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUpView.storyboard; sourceTree = "<group>"; };
 		633A1D32292612560009FBB2 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		633A1D342926137F0009FBB2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		633F3F082925FD3F00A5237B /* CloneInstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloneInstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,11 +55,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63021E7C29273F8900B8AB26 /* AddPopUpView */ = {
+			isa = PBXGroup;
+			children = (
+				63021E7D29273FA700B8AB26 /* PopUpView.storyboard */,
+			);
+			path = AddPopUpView;
+			sourceTree = "<group>";
+		};
 		633A1D31292612250009FBB2 /* VIewController */ = {
 			isa = PBXGroup;
 			children = (
 				633A1D32292612560009FBB2 /* HomeTableViewCell.swift */,
 				633A1D342926137F0009FBB2 /* HomeViewController.swift */,
+				63021E7A292732E300B8AB26 /* PopUpViewController.swift */,
 			);
 			path = VIewController;
 			sourceTree = "<group>";
@@ -96,6 +109,7 @@
 		633F3F1F2926023800A5237B /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				63021E7C29273F8900B8AB26 /* AddPopUpView */,
 				633A1D31292612250009FBB2 /* VIewController */,
 				633F3F202926024A00A5237B /* Home.storyboard */,
 			);
@@ -178,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63021E7E29273FA700B8AB26 /* PopUpView.storyboard in Resources */,
 				633F3F2D2926079E00A5237B /* My.storyboard in Resources */,
 				633F3F292926078200A5237B /* Reeles.storyboard in Resources */,
 				633F3F182925FD4000A5237B /* LaunchScreen.storyboard in Resources */,
@@ -201,6 +216,7 @@
 				633F3F0E2925FD3F00A5237B /* SceneDelegate.swift in Sources */,
 				633A1D352926137F0009FBB2 /* HomeViewController.swift in Sources */,
 				633F3F2F292607A900A5237B /* MyViewController.swift in Sources */,
+				63021E7B292732E300B8AB26 /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -25,6 +25,7 @@ class HomeTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         likeButton.addTarget(self, action: #selector(like), for: .touchUpInside)
+        addButton.addTarget(self, action: #selector(add), for: .touchUpInside)
         
     }
     
@@ -32,10 +33,16 @@ class HomeTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
     }
-    
+    @objc func add(sender: UIButton) {
+        
+        let storyboacrd = UIStoryboard.init(name: "PopUpView", bundle: nil)
+        print("add")
+//        let customPopUpVc = storyboacrd.instantiateViewController(withIdentifier: "PopUpview") as! PopUpViewController
+//        customPopUpVc.modalPresentationStyle = .overCurrentContext
+//        customPopUpVc.modalTransitionStyle = .crossDissolve
+    }
     
     @objc func like(sender:UIButton) {
-
             if count == true {
                 likeButton.setTitleShadowColor(.red, for: .normal)
                 likeButton.backgroundColor = UIColor.red
