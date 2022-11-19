@@ -34,13 +34,16 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="8C7-kK-ziz">
-                                        <rect key="frame" x="157" y="15" width="53.666666666666664" height="70.666666666666671"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="8C7-kK-ziz">
+                                        <rect key="frame" x="153.66666666666666" y="15" width="53.666666666666657" height="70.666666666666671"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XN5-C3-ela">
                                                 <rect key="frame" x="0.0" y="0.0" width="53.666666666666664" height="34.333333333333336"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="link" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="back:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fbt-Is-aqz"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHG-Gv-TbQ">
                                                 <rect key="frame" x="0.0" y="36.333333333333371" width="53.666666666666664" height="34.333333333333343"/>
@@ -98,6 +101,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="8C7-kK-ziz" firstAttribute="leading" secondItem="KKt-pl-ajr" secondAttribute="trailing" constant="75" id="09E-3R-e6p"/>
                                     <constraint firstItem="KKt-pl-ajr" firstAttribute="top" secondItem="1kA-cn-U1I" secondAttribute="top" constant="15" id="1ok-MO-BR6"/>
                                     <constraint firstAttribute="trailing" secondItem="DOX-XS-QwO" secondAttribute="trailing" constant="150" id="45n-Y7-u7N"/>
                                     <constraint firstItem="DOX-XS-QwO" firstAttribute="top" secondItem="8C7-kK-ziz" secondAttribute="bottom" constant="5" id="5L7-ok-eDf"/>

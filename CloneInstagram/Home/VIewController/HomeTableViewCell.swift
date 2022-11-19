@@ -7,9 +7,15 @@
 
 import UIKit
 
+protocol AddButtonDelegate: AnyObject {
+    func addTaget()
+    
+}
+
 class HomeTableViewCell: UITableViewCell {
     var count: Bool = true
     
+  weak var delegate: AddButtonDelegate?
     
     @IBOutlet weak var idImage: UIImageView!
     @IBOutlet weak var titleImage: UIImageView!
@@ -33,21 +39,15 @@ class HomeTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         
     }
+    
     @objc func add(sender: UIButton) {
-        let storyboacrd = UIStoryboard.init(name: "PopUpView", bundle: nil)
-        let popUpVC = storyboacrd.instantiateViewController(withIdentifier: "PopUpView") as! PopUpView
-        popUpVC.modalPresentationStyle = .overCurrentContext
-        popUpVC.modalTransitionStyle = .crossDissolve
-        popUpVC.present(popUpVC, animated: true)
-        
+        delegate?.addTaget()
+//        
 //        let storyboacrd = PopUpView(nibName: "PopUpView", bundle: nil)
 //        storyboacrd.modalPresentationStyle = .overCurrentContext
 //        storyboacrd.modalTransitionStyle = .crossDissolve
 //        storyboacrd.present(storyboacrd, animated: false)
         print("add")
-//        let customPopUpVc = storyboacrd.instantiateViewController(withIdentifier: "PopUpview") as! PopUpViewController
-//        customPopUpVc.modalPresentationStyle = .overCurrentContext
-//        customPopUpVc.modalTransitionStyle = .crossDissolve
     }
     
     @objc func like(sender:UIButton) {
