@@ -15,7 +15,7 @@ protocol AddButtonDelegate: AnyObject {
 class HomeTableViewCell: UITableViewCell {
     var count: Bool = true
     
-  weak var delegate: AddButtonDelegate?
+  weak var delegate: AddButtonDelegate? // 변수 생성 weak 충돌 방지 
     
     @IBOutlet weak var idImage: UIImageView!
     @IBOutlet weak var titleImage: UIImageView!
@@ -41,7 +41,7 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     @objc func add(sender: UIButton) {
-        delegate?.addTaget()
+        delegate?.addTaget() // 델리게이트 명령 하달
 //        
 //        let storyboacrd = PopUpView(nibName: "PopUpView", bundle: nil)
 //        storyboacrd.modalPresentationStyle = .overCurrentContext
